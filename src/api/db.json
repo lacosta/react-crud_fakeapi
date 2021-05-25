@@ -1,0 +1,49 @@
+{
+  "saints": [
+    {
+      "id": 1,
+      "name": "Seiya",
+      "constellation": "Pegaso"
+    },
+    {
+      "id": 2,
+      "name": "Shiryu",
+      "constellation": "Dragón"
+    },
+    {
+      "id": 3,
+      "name": "Hyoga",
+      "constellation": "Cisne"
+    },
+    {
+      "id": 4,
+      "name": "Shun",
+      "constellation": "Andrómeda"
+    },
+    {
+      "id": 5,
+      "name": "Ikki",
+      "constellation": "Fénix"
+    },
+    {
+      "constellation": "Aries",
+      "id": "44327458-e68d-4df8-bc33-acc568000462",
+      "name": "Mú"
+    },
+    {
+      "constellation": "Géminis",
+      "id": "ec9c2b93-2ffd-4b6a-b285-25179ca5b0da",
+      "name": "Saga"
+    },
+    {
+      "constellation": "Leo",
+      "id": "d9d43585-ed08-4fe7-adcf-ade62480eae6",
+      "name": "Aioria"
+    },
+    {
+      "constellation": "Capricornio",
+      "id": "1f53ce95-0736-406d-afd8-8605f3fb6677",
+      "name": "Shura"
+    }
+  ]
+}

@@ -38,7 +38,9 @@ function Table({ data, removeData, setDataToEdit }) {
 }
 
 Table.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.array,
+  removeData: PropTypes.func,
+  setDataToEdit: PropTypes.func,
 };
 
 export default Table;

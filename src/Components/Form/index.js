@@ -1,11 +1,9 @@
 // @packages
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
-const initialState = {
-  constellation: "",
-  id: null,
-  name: "",
-};
+// @own
+import { initialState } from './constants';
 
 function Form({
   createData,
@@ -39,7 +37,7 @@ function Form({
       createData(form);
     } else {
       updateData(form);
-    };
+    }
 
     handleReset();
   };
@@ -49,7 +47,7 @@ function Form({
       setForm(dataToEdit);
     } else {
       setForm(initialState)
-    };
+    }
   }, [dataToEdit]);
 
   return (
@@ -78,5 +76,12 @@ function Form({
     </div>
   );
 }
+
+Form.propTypes = {
+  createData: PropTypes.func,
+  dataToEdit: PropTypes.object,
+  setDataToEdit: PropTypes.func,
+  updateData: PropTypes.func,
+};
 
 export default Form;

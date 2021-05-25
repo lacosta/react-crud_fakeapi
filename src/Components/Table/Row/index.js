@@ -11,10 +11,10 @@ function Row({ element, removeData, setDataToEdit }) {
       <td>{constellation}</td>
       <td>
         <button onClick={() => setDataToEdit(element)}>
-          Editar
+          Edit
         </button>
         <button onClick={() => removeData(id)}>
-          Eliminar
+          Remove
         </button>
       </td>
     </tr>
@@ -22,8 +22,9 @@ function Row({ element, removeData, setDataToEdit }) {
 }
 
 Row.propTypes = {
-  constellation: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  element: PropTypes.object.isRequired,
+  removeData: PropTypes.func,
+  setDataToEdit: PropTypes.func,
 };
 
 export default Row;
