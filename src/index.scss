@@ -1,0 +1,73 @@
+@import './styles/global.scss';
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+};
+
+input[type="text"] {
+  background-color: transparent;
+  border-radius: 4px;
+  border: thin solid $alto-color;
+  display: block;
+  font-size: $font-16;
+  line-height: 1;
+  margin-bottom: 16px;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: $gallery-color;
+  border-radius: 4px;
+  border: thin solid $grey-color;
+  color: $grey-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-16;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: thin solid $alto-color;
+  padding: 8px;
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid1-2 {
+    align-items: start;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
